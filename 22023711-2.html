@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <title>Página do Pokémon Squirtle</title>
     <style>
-      /* Reset de estilos para garantir consistência em diferentes navegadores */
       body,
       h1,
       h2,
@@ -52,7 +51,9 @@
       }
 
       header h1 {
-        font-size: 24px;
+        display: flex;
+        font-size: large;
+        flex-direction: column;
       }
 
       section h1,
@@ -73,6 +74,7 @@
         justify-content: center;
         background-color: #343a40;
         padding: 10px;
+        flex-wrap: wrap;
       }
 
 
@@ -93,16 +95,22 @@
       tr {
         text-align: center;
       }
-
+      html{
+        image-rendering: auto;
+      }
+      
       main section,
       main article,
       main table {
-        color: black;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
+        display: flex;
+   
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
       }
 
       article {
@@ -171,6 +179,7 @@
         <img
           src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
           alt="Squirtle - Pokémon do tipo Água"
+          height="140" width="140"
         />
         <p>
           Squirtle é um Pokémon do tipo Água. É o Pokémon inicial da região de
@@ -252,18 +261,10 @@
         <h2 id="evolucao-label">Evolução</h2>
         <ul>
           <tbody>
-              <li>1</li>
-              <li>Squirtle</li>
-              <li><a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)" target="_blank"><img src="./squirtle.png"></a></li>
+              <li>1 Squirtle<a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)" target="_blank"><img src="./squirtle.png" height="195" width="195"></a></li>
+              <li>2 Wartortle<a href="https://bulbapedia.bulbagarden.net/wiki/Wartortle" target="_blank"><img src="./wartortle.png" height="195" width="195"></img></a></li>
+              <li>3  Blastoise<a href="https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)" target="_blank"><img src="./blastoise.png" height="195" width="195"></img></a></li>
 
-              <li>2</li>
-              <li>Wartortle</li>
-              <li><a href="https://bulbapedia.bulbagarden.net/wiki/Wartortle" target="_blank"><img src="./wartortle.png" ></img></a></li>
-            
-              <li>3</li>
-              <li>Blastoise</li>
-              <li><a href="https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)" target="_blank"><img src="./blastoise.png"></img></a></li>
-            
           </tbody>
         </ul>
       </section>
